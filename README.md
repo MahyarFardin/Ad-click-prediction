@@ -24,11 +24,17 @@ will click on an advertisement on the internet or not.
 **Step 2**: Preprocessing:
 
 *It is important to mention that a deep analysis of this dataset is available under my data analysis repository*
-- Finding missing values using a heatmap
-- Finding a correlation between attributes
-- Removing non-numeric values ( *in another project I will replace them with numeric values to see whether it will increase the accuracy or not* )
+- taking needed data and transforming them into a usable form (i.e. there might be a relation between daytime and clicking so I separated and saved that info)
+- Finding a correlation between attributes using a heatmap (Worthy to mention that data was somehow normalized previously!)
+- Normalizing and encoding data
 
-**Step 3**:Appling all of the models
+**Step 3**:Appling models:
+
+I skipped models like KNN due to the dataset's sparseness. These models are not suitable for sparse data. 
+
+- Decision tree: This was a good choice because it suits our well with our dataset's characteristics (number of instances and features, etc)
+- Random forest: If the decision tree works well, so let's make plenty of them ;)
+- Deep neural network: I just tested some simple architectures with some tweaks and saved the best of them.
       
 ## Feedback
 
